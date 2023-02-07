@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no"/>
+    <title>20001030331王诗瑜 xingceng</title>
+    <script src="./iconfont/iconfont.js"></script>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/xingceng.css">
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+    }
+
+    #header{
+        width: 100%;
+        height: 200px;
+        background-color: rgb(98, 185, 202);
+        font-size: 40px;
+    }
+
+    #fixed{
+        width: 100%;
+        height: 100px;
+        background-color: rgb(69, 197, 197);
+        font-size: 40px;
+        z-index: 10;
+        top: 0;
+        left: 0;
+    }
+
+    #box{
+        position: fixed;
+        padding: 40px;
+        font-size: 30px;
+        color: #fff;
+        background-color: rgb(205, 123, 195);
+        z-index: 11;
+        top: 400px;
+        left: 0;
+        display: none;
+    }
+
+    #main{
+        height: 300px;
+        background: linear-gradient(#000,rgb(105, 187, 225),#fff);
+    }
+</style>
+<body>
+    <header>
+        <h1>我的行程</h1>
+    </header>
+    <section>
+        <div class="chunk1">
+            <h1>登录后查看行程或旅行路线</h1>
+            <div class="button">登录</div>
+        </div>
+
+        <div class="chunk2">
+            <ul class="tab_list">
+                <li class="li active">精选</li>
+                <li class="li">亲子游玩</li>
+                <li class="li">定制游</li>
+                <li class="li">躺酒店</li>
+            </ul>
+        </div>
+
+        <div class="chunk3">
+            <div>
+                <img src="./images/4_1.png" alt="">
+                <p class="title">三亚海棠湾跳伞，想一千次不如去跳一次</p>
+                <p class="des">20884人对此路线有兴趣</p>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="top flex-sc">
+            <ul class="flex-sc">
+                <a href="./index.html">
+                    <li  >
+                        <span class="iconfont icon-shouye"></span>
+                        <p>首页</p>
+                    </li>
+                </a>
+                <a href="./shequ.html">
+                    <li>
+                        <span class="iconfont icon-xingqiu"></span>
+                        <p>社区</p>
+                    </li>
+                </a>
+                <a href="./xiaoxi.html">
+                    <li  >
+                        <span class="iconfont icon-liwuhuodong"></span>
+                        <p>消息</p>
+                    </li>
+                </a>
+                <a href="./xingceng.html">
+                    <li class="activend">
+                        <span class="iconfont icon-rili"></span>
+                        <p>行程</p>
+                    </li>
+                </a>
+                <a href="./wode.html">
+                    <li>
+                        <span class="iconfont icon-zuanshi"></span>
+                        <p>我的</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="bottom">
+            <img src="./images/微信截图_20221220201729.png" alt="">
+        </div>
+    </footer>
+    <script src="./js/base.js"></script>
+    <script src="./js/xingceng.js"></script>
+</head>
+<body>
+    <div id="header">background</div>
+    <div id="fixed">running</div>
+    <div id="box">remain</div>
+    <div id="main">main</div>
+    <script>
+        window.onscroll = function(){
+            var st = document.documentElement.scrollTop || document.body.scrollTop;
+
+            // console.log(st);
+
+            if(st > header.offsetHeight){
+                box.style.display = "block";
+                fixed.style.position = "fixed";
+            }
+            else{
+                box.style.display = "none";
+                fixed.style.position = "static";
+            }
+        }
+    </script>
+</body>
+</html>

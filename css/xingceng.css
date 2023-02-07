@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.iconfont {
+    width: 60rem;
+    height: 60rem;
+    fill: currentColor;
+    overflow: hidden;
+    color: #000 !important;
+}
+.flex-cc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-sc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-xc{
+    display: flex;
+    align-items: center;
+}
+header{
+    background-image: url('../images/u=3659310152\,952609386&fm=253&fmt=auto&app=120&f=JPEG.webp');
+    background-size: 100% 100%;
+    padding: 5rem 30rem;
+    color: #333;
+    height: 350rem;
+}
+header h1{
+    font-size: 50rem;
+    color: #fff;
+    margin-top: 250rem;
+}
+ul{
+    overflow: hidden;
+    width: 100%;
+}
+li{
+    list-style: none;
+    float: left;
+    color: gray;
+    font-size: 30rem;
+    margin-right: 10rem;
+    position: relative;
+}
+.li{
+    color: #fff;
+    padding: 6rem 15rem;
+    border-radius: 40rem;
+    color: #333;
+    margin: 10rem 0;
+}
+.active::after{
+    content: " ";
+    position: absolute;
+    background-color: rgb(7, 88, 138);
+    width: 60%;
+    height: 10rem;
+    left: 20rem;
+    bottom: 0;
+}
+
+
+
+
+
+section{
+    height: 100vh;
+}
+.chunk1{
+    background-color: #fff;
+    border-radius: 25rem;
+    margin-top: -20rem;
+    text-align: center;
+    padding: 50rem 0;
+}
+.chunk1 h1{
+    font-size: 40rem;
+    margin-bottom: 50rem;
+}
+.chunk1 .button{
+    background-color: rgb(53,135,247);
+    padding: 10rem 80rem;
+    border-radius: 40rem;
+    font-size: 30rem;
+    display: inline-block;
+    color: #fff;
+}
+.chunk2{
+    padding: 20rem;
+}
+.chunk3{
+    padding: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.chunk3 > div{
+    width: 48%;
+    margin-bottom: 15rem;
+}
+.chunk3 img{
+    border-radius: 15rem;
+    width: 100%;
+}
+.chunk3 .title{
+    font-size: 30rem;
+    font-weight: bold;
+    margin: 10rem 0;
+}
+footer{
+    background: #fff;
+    /* height: 180rem; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top: 31rem;
+}
+footer img{
+    width: 100%;
+}
+
+footer li{
+    margin-right: 0;
+    width: 100rem;
+    font-size: 12rem;
+    /* line-height: 30rem; */
+    text-align: center;
+}
+
+footer .iconfont{
+    font-size: 46rem;
+    margin-bottom: 0 !important;
+}
+footer .activend{
+    color: rgb(96,175,252);
+}
+footer .activend .iconfont{
+    color: rgb(96,175,252) !important;
+}
+
+footer .iconfont{
+    display: inline-block;
+    margin-bottom: 20rem;
+}

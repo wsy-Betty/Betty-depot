@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no"/>
+    <title>20001030331王诗瑜 xiaoxi</title>
+    <script src="./iconfont/iconfont.js"></script>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/xiaoxi.css">
+</head>
+<style>
+    div{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(237, 234, 234);
+    }
+</style>
+<body>
+    <header>
+        <div class="top flex-cc">
+            <div class="top_list">
+                <b>消息</b>
+            </div>
+            <span class="iconfont icon-kefu"></span>
+        </div>
+        <div class="bottom flex-sc">
+            <div>
+                <img src="./images/3_2.png" alt="">
+                <p>订单出行</p>
+            </div>
+            <div>
+                <img src="./images/3_3.png" alt="">
+                <p>互动消息</p>
+            </div>
+            <div>
+                <img src="./images/3_4.png" alt="">
+                <p>账户通知</p>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="chunk1">
+            <div class="content flex-cc">
+                <div>
+                    <img src="./images/3_1.png" alt="">
+                    <p>登录后查看消息</p>
+                    <div class="button">登录/注册</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="top flex-sc">
+            <ul class="flex-sc">
+                <a href="./index.html">
+                    <li  >
+                        <span class="iconfont icon-shouye"></span>
+                        <p>首页</p>
+                    </li>
+                </a>
+                <a href="./shequ.html">
+                    <li>
+                        <span class="iconfont icon-xingqiu"></span>
+                        <p>社区</p>
+                    </li>
+                </a>
+                <a href="./xiaoxi.html">
+                    <li  class="activend">
+                        <span class="iconfont icon-liwuhuodong"></span>
+                        <p>消息</p>
+                    </li>
+                </a>
+                <a href="./xingceng.html">
+                    <li>
+                        <span class="iconfont icon-rili"></span>
+                        <p>行程</p>
+                    </li>
+                </a>
+                <a href="./wode.html">
+                    <li>
+                        <span class="iconfont icon-zuanshi"></span>
+                        <p>我的</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="bottom">
+            <img src="./images/微信截图_20221220201729.png" alt="">
+        </div>
+    </footer>
+    <script src="./js/base.js"></script>  
+</head>
+<body>
+    <div></div>
+    <script>
+        var div = document.getElementsByTagName("div")[0];
+
+        var startX = 0;
+        var startY = 0;
+
+        var x = 0;
+        var y = 0;
+
+        div.addEventListener("touchstart",function(e){
+            startX = e.targetTouches[0].pageX;
+            startY = e.targetTouches[0].pageY;
+            x = this.offsetLeft;
+            y = this.offsetTop;
+        })
+
+        div.addEventListener("touchmove",function(e){
+            var moveX = e.targetTouches[0].pageX - startX;
+            var moveY = e.targetTouches[0].pageY - startY;
+            this.style.left = x + moveX + "px";
+            this.style.top = y + moveY + "px";
+
+            e.preventDefault();
+        })
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.iconfont {
+    width: 60rem;
+    height: 60rem;
+    fill: currentColor;
+    overflow: hidden;
+    color: #000 !important;
+}
+.flex-cc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-sc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-xc{
+    display: flex;
+    align-items: center;
+}
+header{
+    background: #fff;
+    padding: 5rem 30rem;
+    color: #333;
+}
+
+
+
+header .bottom{
+    margin-top: 40rem;
+    position: relative;
+}
+
+header .top b{
+    font-size: 44rem;
+    padding: 20rem 0;
+    margin: 0 40rem;
+}
+
+header .top .iconfont{
+    font-size: 50rem;
+}
+
+ul{
+    overflow: hidden;
+    width: 100%;
+}
+li{
+    list-style: none;
+    float: left;
+    color: gray;
+    font-size: 30rem;
+    margin-right: 10rem;
+    position: relative;
+}
+.li{
+    color: #fff;
+    padding: 6rem 15rem;
+    border-radius: 40rem;
+    color: #333;
+    margin: 10rem 0;
+}
+.active::after{
+    content: " ";
+    position: absolute;
+    background-color: rgb(64,173,242);
+    width: 100%;
+    height: 10rem;
+    left: 5rem;
+    bottom: 0;
+}
+
+
+
+
+
+section{
+    padding: 20rem;
+    background-color: rgb(244,244,244);
+}
+
+.chunk1,
+.chunk2{
+    padding: 20rem;
+    background-color: #fff;
+    border-radius: 20rem;
+    text-align: center;
+    margin-top: 40rem;
+}
+.userheader{
+    width: 80rem;
+}
+.guanzhu{
+    border: 1px solid grey;
+    border-radius: 20rem;
+    font-size: 25rem;
+    padding: 6rem 25rem; 
+}
+
+.title{
+    margin: 20rem 0;
+    text-align: left;
+    font-size: 30rem;
+    font-weight: bold;
+}
+.txt{
+    text-align: left;
+    margin-bottom: 100rem;
+}
+.imgs img{
+    width: 30%;
+}
+
+
+footer{
+    background: #fff;
+    /* height: 180rem; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top: 31rem;
+}
+footer img{
+    width: 100%;
+}
+
+footer li{
+    margin-right: 0;
+    width: 100rem;
+    font-size: 12rem;
+    /* line-height: 30rem; */
+    text-align: center;
+}
+
+footer .iconfont{
+    font-size: 46rem;
+    margin-bottom: 0 !important;
+}
+footer .activend{
+    color: rgb(96,175,252);
+}
+footer .activend .iconfont{
+    color: rgb(96,175,252) !important;
+}
+
+footer .iconfont{
+    display: inline-block;
+    margin-bottom: 20rem;
+}

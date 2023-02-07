@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no"/>
+    <title>20001030331王诗瑜 wode</title>
+    <script src="./iconfont/iconfont.js"></script>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/wode.css">
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+    }
+
+    #ad{
+        height: 300px;
+        background-color: rgb(97, 157, 186);
+    }
+</style>
+<body>
+    <header>
+        <div class="icons flex-sc">
+            <span class="iconfont icon-saoma"></span>
+            <div>
+                <span class="iconfont icon-rili"></span>
+                <span class="iconfont icon-yonghu"></span>
+                <span class="iconfont icon-shezhi"></span>
+            </div>
+        </div>
+        <h1>登录携程，开启旅程</h1>
+        <div class="buttons flex-cc">
+            <div>登录/注册</div>
+            <div>手机号查单</div>
+        </div>
+    </header>
+    <section>
+        <div class="chunk1 flex-sc">
+            <div>
+                <img src="./images/5_1.png" alt="">
+                <p>全部订单</p>
+            </div>
+            <div>
+                <img src="./images/5_2.png" alt="">
+                <p>待付款</p>
+            </div>
+            <div>
+                <img src="./images/5_3.png" alt="">
+                <p>未出行</p>
+            </div>
+            <div>
+                <img src="./images/5_4.png" alt="">
+                <p>待点评</p>
+            </div>
+        </div>
+
+        <div class="chunk2">
+            <div class="flex-sc">
+                <span>我的钱包</span>
+                <div>查看钱包·礼品卡·现金 > </div>
+            </div>
+
+            <div class="flex-sc" style="margin-top: 50rem;">
+                <div>
+                    <p>5.0%+</p>
+                    <span>财富赚钱</span><br>
+                    <span>稳健理财</span>
+                </div>
+                <div>
+                    <p>5.0%+</p>
+                    <span>财富赚钱</span><br>
+                    <span>稳健理财</span>
+                </div>
+                <div>
+                    <p>5.0%+</p>
+                    <span>财富赚钱</span><br>
+                    <span>稳健理财</span>
+                </div>
+                <div>
+                    <p>5.0%+</p>
+                    <span>财富赚钱</span><br>
+                    <span>稳健理财</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="top flex-sc">
+            <ul class="flex-sc">
+                <a href="./index.html">
+                    <li  >
+                        <span class="iconfont icon-shouye"></span>
+                        <p>首页</p>
+                    </li>
+                </a>
+                <a href="./shequ.html">
+                    <li>
+                        <span class="iconfont icon-xingqiu"></span>
+                        <p>社区</p>
+                    </li>
+                </a>
+                <a href="./xiaoxi.html">
+                    <li  >
+                        <span class="iconfont icon-liwuhuodong"></span>
+                        <p>消息</p>
+                    </li>
+                </a>
+                <a href="./xingceng.html">
+                    <li >
+                        <span class="iconfont icon-rili"></span>
+                        <p>行程</p>
+                    </li>
+                </a>
+                <a href="./wode.html">
+                    <li class="activend">
+                        <span class="iconfont icon-zuanshi"></span>
+                        <p>我的</p>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="bottom">
+            <img src="./images/微信截图_20221220201729.png" alt="">
+        </div>
+    </footer>
+    <script src="./js/base.js"></script> 
+</head>
+<body>
+    <div id="ad"></div>
+
+    <script>
+        var ad = document.getElementById("ad");
+        var timer;
+        var gao = ad.offsetHeight;/* <div id="ad"></div>的高度 */
+
+        // console.log(gao);
+
+        window.setTimeout(function(){
+            timer = setInterval(hiddH,1);
+        },3000);
+
+
+        function hiddH(){
+            if(gao >= 0){
+                ad.style.height = gao-- + "px";
+            }
+            else{
+                clearInterval(timer);
+            }
+        }
+    </script>
+</body>
+</html>

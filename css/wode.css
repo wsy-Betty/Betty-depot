@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.iconfont {
+    width: 60rem;
+    height: 60rem;
+    fill: currentColor;
+    overflow: hidden;
+    color: #000 !important;
+}
+.flex-cc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-sc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-xc{
+    display: flex;
+    align-items: center;
+}
+header{
+    background-image: url('../images/u=3678434067\,3194450727&fm=253&fmt=auto&app=138&f=JPEG.webp');
+    background-size: 100% 100%;
+    padding: 5rem 30rem;
+    color: #333;
+    height: 350rem;
+}
+header .icons{
+    color: #fff;
+    margin-top: 50rem;
+}
+header .iconfont{
+    color: #fff !important;
+    font-size: 52rem;
+}
+header h1{
+    font-size: 50rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 20rem;
+
+}
+header .buttons div{
+    width: 200rem;
+    text-align: center;
+    border-radius: 5px;
+
+    padding: 15rem 25rem;
+}
+header .buttons div:first-child{
+    color: #fff;
+    background-color: rgb(248,126,40);
+}
+header .buttons div:last-child{
+    color: #fff;
+    border: 1px solid #fff;
+    margin-left: 20rem;
+}
+ul{
+    overflow: hidden;
+    width: 100%;
+}
+li{
+    list-style: none;
+    float: left;
+    color: gray;
+    font-size: 30rem;
+    margin-right: 10rem;
+    position: relative;
+}
+.li{
+    color: #fff;
+    padding: 6rem 15rem;
+    border-radius: 40rem;
+    color: #333;
+    margin: 10rem 0;
+}
+.active::after{
+    content: " ";
+    position: absolute;
+    background-color: rgb(7, 88, 138);
+    width: 60%;
+    height: 10rem;
+    left: 20rem;
+    bottom: 0;
+}
+
+
+
+body{
+    background-color: rgb(248,248,248);
+
+}
+
+section{
+    height: 100vh;
+    padding: 20rem;
+}
+.chunk1,
+.chunk2{
+    background-color: #fff;
+    padding: 20rem;
+    border-radius: 25rem;
+    margin-bottom: 20rem;
+}
+.chunk1 div{
+    width: 25%;
+    text-align: center;
+}
+.chunk1 img{
+    width: 100rem;
+    height: 100rem;
+}
+.chunk2 p{
+    font-weight: bold;
+    font-size: 28rem;
+}
+
+
+
+footer{
+    background: #fff;
+    /* height: 180rem; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top: 31rem;
+}
+footer img{
+    width: 100%;
+}
+
+footer li{
+    margin-right: 0;
+    width: 100rem;
+    font-size: 12rem;
+    /* line-height: 30rem; */
+    text-align: center;
+}
+
+footer .iconfont{
+    font-size: 46rem;
+    margin-bottom: 0 !important;
+}
+footer .activend{
+    color: rgb(96,175,252);
+}
+footer .activend .iconfont{
+    color: rgb(96,175,252) !important;
+}
+
+footer .iconfont{
+    display: inline-block;
+    margin-bottom: 20rem;
+}

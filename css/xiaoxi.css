@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.iconfont {
+    width: 60rem;
+    height: 60rem;
+    fill: currentColor;
+    overflow: hidden;
+    color: #000 !important;
+}
+.flex-cc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-sc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-xc{
+    display: flex;
+    align-items: center;
+}
+header{
+    background: rgb(213,227,240);
+    padding: 5rem 30rem;
+    color: #333;
+    height: 350rem;
+}
+
+
+
+header .bottom{
+    margin-top: 40rem;
+    position: relative;
+    background: #fff;
+    width: 99%;
+    border-radius: 15rem;
+    margin: 0 auto; 
+    text-align: center;
+    padding: 15rem;
+}
+header .top{
+    padding: 20rem 0;
+
+}
+header .top b{
+    font-size: 44rem;
+    margin: 0 40rem;
+}
+
+header .top .iconfont{
+    font-size: 50rem;
+    position: absolute;
+    right: 10rem;
+}
+
+ul{
+    overflow: hidden;
+    width: 100%;
+}
+li{
+    list-style: none;
+    float: left;
+    color: gray;
+    font-size: 30rem;
+    margin-right: 10rem;
+    position: relative;
+}
+.li{
+    color: #fff;
+    padding: 6rem 15rem;
+    border-radius: 40rem;
+    color: #333;
+    margin: 10rem 0;
+}
+
+
+
+
+
+section{
+    padding: 20rem;
+    height: 100vh;
+    background-color: rgb(248,248,248);
+}
+.content img{
+    width: 250rem;
+}
+.content{
+    margin-top: 300rem;
+    text-align: center;
+    line-height: 50rem;
+}
+.content .button{
+    color: rgb(100,190,253);
+    border: 1px solid rgb(100,190,253);
+    padding: 15rem 22rem;
+    margin-top: 100rem;
+    cursor: pointer;
+}
+
+footer{
+    background: #fff;
+    /* height: 180rem; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top: 31rem;
+}
+footer img{
+    width: 100%;
+}
+
+footer li{
+    margin-right: 0;
+    width: 100rem;
+    font-size: 12rem;
+    /* line-height: 30rem; */
+    text-align: center;
+}
+
+footer .iconfont{
+    font-size: 46rem;
+    margin-bottom: 0 !important;
+}
+footer .activend{
+    color: rgb(96,175,252);
+}
+footer .activend .iconfont{
+    color: rgb(96,175,252) !important;
+}
+
+footer .iconfont{
+    display: inline-block;
+    margin-bottom: 20rem;
+}

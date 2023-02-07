@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no"/>
+    <title>20001030331王诗瑜 login</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(249,249,249);
+            flex-wrap: wrap;
+        }
+        .logo{
+            width: 400rem;
+        }
+        body > div{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        input{
+            padding-left: 40rem;
+            height: 50rem;
+            margin-bottom: 50rem;
+        }
+        #submit{
+            font-size: 36rem;
+            font-weight: bold;
+            padding-left: 0rem;
+            background-color: orange;
+            color: #fff;
+            text-align: center;
+        }
+        body{
+            background-image: url('./images/u=3678434067\,3194450727&fm=253&fmt=auto&app=138&f=JPEG.webp');
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div style="text-align: center;">
+            <form action="./index.html">
+                <input type="text" placeholder="请输入用户名">
+                <input type="password" placeholder="请输入密码">
+                <input type="submit" name="" id="submit" value="提交">
+            </form>
+        </div>
+    </div>
+</body>
+<style>
+    #fm>div{
+        display: flex;
+        height: 32px;
+        line-height: 32px;
+        margin: 5px;
+    }
+
+    #fm label{
+        width: 150px;
+        font-size: 14px;
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    .input{
+        width: 130px;
+        margin-top: 5px;
+        color: #f00;
+    }
+
+    .error{
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 10px;
+        color: #0f0;
+        display: none;
+    }
+
+    #fm>div:last-child{
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+<form action="http://www.baidu.com" method="post" id="fm" name="fm" onsubmit="return checkform()">
+    <div>
+        <label for="user">用户名：</label>
+        <input type="text" id="user" name="user" class="input">
+        <span class="error">用户名应为8-16位</span>
+    </div>
+
+    <div>
+        <label for="pwd">密码：</label>
+        <input type="password" id="pwd" name="pwd" class="input">
+        <span class="error">密码应为8-16位</span>
+    </div>
+
+    <div>
+        <label for="pwd2">重复密码：</label>
+        <input type="password" id="pwd2" name="pwd2" class="input">
+        <span class="error">两次密码应为相同</span>
+    </div>
+
+    <div>
+        <input type="submit" value="确认注册">
+    </div>
+</form>
+<script src="./js/base.js"></script>
+<script>
+    var user = document.getElementById("user");
+    var error = document.getElementsByClassName("error");
+    var pwd = document.getElementById("pwd");
+    var pwd2 = document.getElementById("pwd2");
+
+    user.onchange = checkuser;/* 函数名，不是调用函数。 */
+    pwd.onchange = checkpwd;
+    pwd2.onchange = checkpwd2;
+
+    function checkuser(){
+        if(user.value.length > 8 && user.value.length < 16){
+            error[0].style.display = "none";
+            return 1;
+        }
+        else{
+            error[0].style.display = "block";
+            return 0;
+        }
+    }
+
+    function checkpwd(){
+        if(pwd.value.length > 8 && pwd.value.length < 16){
+            error[1].style.display = "none";
+            return 1;
+        }
+        else{
+            error[1].style.display = "block";
+            return 0;
+        }
+    }
+
+    function checkpwd2(){
+        if(pwd.value == pwd2.value){
+            error[2].style.display = "none";
+            return 1;
+        }
+        else{
+            error[2].style.display = "block";
+            return 0;
+        }
+    }
+
+    function checkform(){
+        var rs = checkuser()*checkpwd()*checkpwd2();
+
+        if(rs === 0){
+            return false;
+        }
+        else{
+            true;
+        }
+    }
+</script>
+
+</html>
